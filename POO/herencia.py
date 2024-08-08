@@ -7,14 +7,14 @@ otro que imprima "Soy un deporte"
 '''
 class Deporte:
 
-    def __ini__(self,nombre):
+    def __init__(self,nombre):
         self.nombre = nombre
 
     def __str__(self):
         return f"El nombre del deporte es:{self.nombre}"
     
     def queDeporte(self):
-        print("{self.nombre} + soy un deporte")
+        print(self.nombre + ": soy un deporte")
 
 deporte_1 = Deporte("Nadar")
 print(deporte_1)
